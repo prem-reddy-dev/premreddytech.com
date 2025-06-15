@@ -1,1 +1,140 @@
+/* Full screen background */
+.hero-container {
+  background-image: url('assets/background-office.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  color: white;
+  backdrop-filter: brightness(0.85);
+  flex-wrap: wrap; /* Allows flex items to wrap on smaller screens */
+}
+
+/* Left side - profile */
+.hero-profile {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.hero-profile .profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #0af;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.hero-profile h1 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.hero-profile .title {
+  font-size: 1rem;
+  color: #add8ff;
+  font-weight: 500;
+}
+
+.linkedin-link {
+  color: #89d1ff;
+  font-weight: 500;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Right side - About, Services */
+.hero-content {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.services-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.services-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Resume Button */
+.resume-btn {
+  background-color: #0af;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Quick Contact Block */
+.contact-quick {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-quick a {
+  color: #87cefa;
+}
+
+/* ----------- Responsive Design for Mobile ----------- */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .hero-profile {
+    align-items: center;
+  }
+
+  .hero-profile .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-profile h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .services-list li {
+    font-size: 0.95rem;
+  }
+
+  .resume-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .linkedin-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
 /* You can add global styles to this file, and also import other style files */
